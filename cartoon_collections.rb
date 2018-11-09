@@ -26,7 +26,9 @@ def find_the_cheese(to_check)# code an argument here
   found = false
   i = 0
   while !found
-    to_check.include?(cheese_types[i])
+    if to_check.include?(cheese_types[i])
+      found = true
+    end
     i += 1
   end
 end
