@@ -23,5 +23,10 @@ end
 def find_the_cheese(to_check)# code an argument here
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
-  to_check.each
+  found = false
+  i = 0
+  while !found
+    to_check.include?(cheese_types[i])
+    i += 1
+  end
 end
