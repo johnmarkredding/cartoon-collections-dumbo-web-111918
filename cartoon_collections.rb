@@ -20,7 +20,18 @@ def long_planeteer_calls(calls)# code an argument here
   !(result.empty?)
 end
 
-def find_the_cheese# code an argument here
+def find_the_cheese(to_check)# code an argument here
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
+  found = false
+  elem = nil
+  i = 0
+  while !found && i < to_check.size
+    if to_check.include?(cheese_types[i])
+      found = true
+      elem = cheese_types[i]
+    end
+    i += 1
+  end
+  elem
 end
